@@ -3,13 +3,12 @@
         Workshop Todo List<br>
         <%@todos.each do |todo|%>
             <li>
-                <a href="/todo/show/1"><%=todo.description%></a> 
+                <a href="/todo/show/<%=todo.id%>"><%=todo.description%></a> 
                 <span class="pomodoro-estimate"><%=todo.pomodoro_estimate%> pomodoro</span> 
                 <input type="checkbox">
             </li><br>
         <% end %>    
-           
-    
+     
     <a href="todo/new">Add Todo</a><br>
     
     <div id="my-name">
