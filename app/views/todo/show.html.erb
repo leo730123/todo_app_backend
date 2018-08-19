@@ -1,9 +1,9 @@
-<h1>Todo # <%=params[:id]%></h1>
+<h1>Todo # <%=@t.id%></h1>
 
    
-        <p><%=@todo_description%></p>
+        <p><%=@t.description%></p>
         pomodoro estimate:
-        <p><%=@todo_pomodoro_estimate%></p>
+        <p><%=@t.pomodoro_estimate%></p>
         <input type="checkbox"><br>
         <a href="/todos">Go Back</a>
         <a href="#">Edit</a>
