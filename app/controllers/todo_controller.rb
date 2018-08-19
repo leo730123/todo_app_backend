@@ -16,5 +16,9 @@ class TodoController <ApplicationController
         t.completed=false
         t.save
         redirect_to "/todo/show/#{t.id}"
-    end    
+    end 
+    def destroy
+        Todo.destroy(params[:id])
+        redirect_to("/todos")
+    end
 end
