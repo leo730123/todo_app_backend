@@ -1,39 +1,14 @@
 <h1>To Do List</h1>
 
         Workshop Todo List<br>
-        <ul>
+        <%@todos.each do |todo|%>
             <li>
-                <a href="/todo/show/3">Make the curriculum</a> 
-                <span class="pomodoro-estimate">4 pomodoros</span> 
+                <a href="/todo/show/1"><%=todo.description%></a> 
+                <span class="pomodoro-estimate"><%=todo.pomodoro_estimate%> pomodoro</span> 
                 <input type="checkbox">
             </li><br>
-            <li>
-                <a href="/todo/show/2">Buy workshop supplies</a> 
-                <span class="pomodoro-estimate">3 pomodoros</span>
-                <input type="checkbox">
-            </li><br>
-            <li>
-                <a href="/todo/show/4">Meet with the volunteer trainers</a> 
-                <span class="pomodoro-estimate">2 pomodoros</span>
-                <input type="checkbox">
-            </li><br>
-            <li><a href="/todo/show/5">Order food for Saturday and Sunday</a> 
-                <span class="pomodoro-estimate">1 pomodoro</span> 
-                <input type="checkbox">
-            </li><br>
-            <li><a href="/todo/show/6">Check pre-work assignments</a> 
-                    <span class="pomodoro-estimate">2 pomodoros</span>
-                    <input type="checkbox">
-                    </li><br>
-            <li><a href="/todo/show/7">Send workshop location to all the students</a> 
-                    <span class="pomodoro-estimate">1 pomodoro</span>
-                    <input type="checkbox">
-                    </li><br>
-            <li><a href="/todo/show/8">Have a great workshop</a>
-                    <span class="pomodoro-estimate">0 pomodoros</span>
-                    <input type="checkbox">
-            </li><br>
-        </ul>
+        <% end %>    
+           
     
     <a href="todo/new">Add Todo</a><br>
     
