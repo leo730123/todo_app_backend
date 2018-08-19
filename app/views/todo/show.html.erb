@@ -6,5 +6,5 @@
         <p><%=@t.pomodoro_estimate%></p>
         <input type="checkbox"><br>
         <a href="/todos">Go Back</a>
-        <a href="#">Edit</a>
+        <a href="/todo/edit/<%=@t.id%>">Edit</a>
         <a href="/todo/destroy/<%=@t.id%>">Delete</a>   
